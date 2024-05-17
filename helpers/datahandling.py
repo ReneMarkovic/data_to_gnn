@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
-
+import chardet
 
 def convert_df_to_csv(df):
     # Convert DataFrame to CSV string
@@ -9,7 +9,12 @@ def convert_df_to_csv(df):
 # Read data
 def read_data(uploaded_file):
     if uploaded_file.name.lower().endswith('.csv'):
-        return pd.read_csv(uploaded_file)
+        rawdata = uploaded_file.read()
+        result = chardet.detect(rawdata)
+        encoding = result['encoding']
+        uploaded_file.seek(0)  # Reset file pointer to the beginning
+        return pd.read_csv(uploaded_file, encoding=encoding)
+        #return pd.read_csv(uploaded_file)
     elif uploaded_file.name.lower().endswith('.xlsx'):
         return pd.read_excel(uploaded_file)
     elif uploaded_file.name.lower().endswith('.json'):
