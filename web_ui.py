@@ -3,7 +3,7 @@ import pandas as pd
 import torch
 import numpy as np
 from torch_geometric.data import Data
-import helpers as hf1
+import webui as hf1
 import os
 import matplotlib.pyplot as plt
 
@@ -13,6 +13,7 @@ def main():
     hf1.show_intro()
     
     st.header(" Step 1: Upload OR Generate Node Data")
+    
     progress = st.progress(0, text = "Step 1/5: Upload Node Table")
     node_data_choice = st.radio(
         "Choose how to provide NODE data:",
