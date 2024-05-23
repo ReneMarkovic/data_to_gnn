@@ -1,0 +1,51 @@
+CustomerKey,Prefix,FirstName,LastName,BirthDate,MaritalStatus,Gender,EmailAddress,AnnualIncome,TotalChildren,EducationLevel,Occupation,HomeOwner
+11596,MR.,ROGER,RAJE,1963-09-03,M,M,roger41@adventure-works.com,40000.0,1.0,Bachelors,Skilled Manual,Y
+11829,MRS.,SOPHIA,CAMPBELL,1969-11-02,M,F,sophia5@adventure-works.com,70000.0,5.0,Graduate Degree,Professional,Y
+11926,MR.,EDUARDO,FOSTER,1978-03-18,S,M,eduardo60@adventure-works.com,40000.0,0.0,Partial College,Skilled Manual,N
+12139,MR.,FRANKLIN,YANG,1933-03-15,M,M,franklin5@adventure-works.com,70000.0,4.0,Graduate Degree,Management,Y
+12204,MR.,BRADLEY,JAI,1938-02-02,M,M,bradley13@adventure-works.com,120000.0,2.0,Graduate Degree,Management,Y
+12415,MS.,BRIANNA,RICHARDSON,1966-11-02,S,F,brianna36@adventure-works.com,60000.0,0.0,Graduate Degree,Skilled Manual,N
+13513,MRS.,ABIGAIL,HENDERSON,1941-09-08,M,F,abigail73@adventure-works.com,30000.0,1.0,Bachelors,Clerical,Y
+13559,MS.,LORI,RAMOS,1969-06-17,S,F,lori18@adventure-works.com,50000.0,0.0,Graduate Degree,Skilled Manual,Y
+13603,MRS.,MOLLY,MARTINEZ,1950-06-01,M,F,molly16@adventure-works.com,120000.0,4.0,Partial College,Management,Y
+16600,MRS.,JANET,SUAREZ,1948-05-16,S,F,janet25@adventure-works.com,90000.0,4.0,High School,Management,Y
+16781,MR.,DYLAN,CHEN,1945-06-18,M,M,dylan25@adventure-works.com,70000.0,5.0,Bachelors,Management,Y
+16870,MRS.,ANDREA,MORGAN,1955-10-02,M,F,andrea22@adventure-works.com,60000.0,2.0,High School,Professional,N
+16907,MRS.,SARAH,HALL,1939-03-21,S,F,sarah1@adventure-works.com,80000.0,4.0,Graduate Degree,Management,Y
+16910,MR.,RYAN,DIAZ,1939-06-14,M,M,ryan25@adventure-works.com,120000.0,2.0,Graduate Degree,Management,Y
+16980,MRS.,JILL,MOORE,1966-04-08,M,F,jill5@adventure-works.com,70000.0,4.0,Graduate Degree,Professional,Y
+17009,MR.,WYATT,BUTLER,1968-10-26,S,M,wyatt64@adventure-works.com,70000.0,0.0,Bachelors,Professional,Y
+17318,MRS.,TIFFANY,ZHANG,1965-12-18,M,F,tiffany0@adventure-works.com,80000.0,5.0,Bachelors,Professional,Y
+17663,MRS.,ELIZABETH,HAYES,1955-02-17,M,F,elizabeth51@adventure-works.com,30000.0,1.0,High School,Clerical,N
+18047,MS.,LATASHA,ALVAREZ,1974-02-09,M,F,latasha4@adventure-works.com,30000.0,0.0,Partial College,Clerical,N
+18103,MRS.,CHELSEA,GONZALEZ,1951-06-24,S,F,chelsea20@adventure-works.com,60000.0,2.0,High School,Professional,N
+18226,MR.,JOSEPH,WALKER,1960-05-06,M,M,joseph30@adventure-works.com,60000.0,1.0,Partial College,Skilled Manual,Y
+18827,MRS.,CARMEN,RAMAN,1961-11-22,S,F,carmen15@adventure-works.com,80000.0,5.0,Partial College,Professional,Y
+19049,MR.,CRAIG,GUTIERREZ,1946-10-13,M,M,craig12@adventure-works.com,170000.0,4.0,Bachelors,Management,Y
+19203,MR.,DARREN,NAVARRO,1953-06-13,S,M,darren32@adventure-works.com,20000.0,2.0,High School,Manual,Y
+19488,MRS.,JAMIE,LIN,1964-06-12,S,F,jamie10@adventure-works.com,30000.0,2.0,Partial College,Clerical,Y
+19574,MRS.,MICHELE,RAMOS,1966-02-10,S,F,michele51@adventure-works.com,80000.0,5.0,Graduate Degree,Management,Y
+19712,MR.,ERIC,PHILLIPS,1960-11-23,M,M,eric48@adventure-works.com,100000.0,0.0,Partial College,Professional,Y
+20405,MR.,ISAIAH,CAMPBELL,1978-07-03,S,M,isaiah30@adventure-works.com,70000.0,0.0,Partial College,Skilled Manual,N
+20938,MS.,CAROLYN,ROWE,1977-08-23,S,F,carolyn42@adventure-works.com,30000.0,0.0,Partial College,Clerical,N
+21215,MS.,TIFFANY,YANG,1964-08-27,S,F,tiffany5@adventure-works.com,70000.0,0.0,Bachelors,Professional,Y
+21235,MS.,STEPHANIE,HERNANDEZ,1975-11-06,S,F,stephanie63@adventure-works.com,40000.0,0.0,High School,Skilled Manual,N
+21754,MRS.,KAITLYN,LOPEZ,1942-10-09,M,F,kaitlyn19@adventure-works.com,70000.0,5.0,Bachelors,Management,N
+22168,MRS.,ERICA,WANG,1949-05-02,M,F,erica1@adventure-works.com,30000.0,3.0,Partial College,Clerical,N
+22657,MR.,CLINTON,SUAREZ,1964-02-19,S,M,clinton15@adventure-works.com,10000.0,3.0,Partial High School,Manual,Y
+22819,MRS.,DAISY,ALVAREZ,1953-05-20,M,F,daisy1@adventure-works.com,80000.0,4.0,Partial College,Professional,Y
+23137,MRS.,CHLOE,SANDERS,1957-10-23,M,F,chloe65@adventure-works.com,80000.0,2.0,Bachelors,Management,N
+23888,MR.,EDWARD,CLARK,1965-08-10,M,M,edward41@adventure-works.com,50000.0,3.0,Bachelors,Skilled Manual,Y
+24400,MRS.,KAITLYN,PARKER,1964-06-09,M,F,kaitlyn6@adventure-works.com,100000.0,5.0,Partial College,Professional,N
+24666,MRS.,HANNAH,MARTINEZ,1948-05-11,M,F,hannah15@adventure-works.com,40000.0,2.0,High School,Professional,N
+24756,MR.,CARLOS,BELL,1958-08-05,M,M,carlos16@adventure-works.com,40000.0,1.0,Partial College,Clerical,Y
+25047,MR.,TREVOR,LONG,1973-11-10,M,M,trevor9@adventure-works.com,60000.0,0.0,Partial College,Professional,Y
+25807,MRS.,KAITLIN,LOPEZ,1947-11-10,M,F,kaitlin15@adventure-works.com,90000.0,5.0,Partial High School,Skilled Manual,Y
+26315,MRS.,TAYLOR,PETERSON,1969-05-15,S,F,taylor17@adventure-works.com,60000.0,1.0,Graduate Degree,Professional,N
+26501,MRS.,ALLISON,PARKER,1948-02-03,S,F,allison30@adventure-works.com,60000.0,2.0,Partial College,Professional,Y
+26858,MR.,SAMUEL,LOPEZ,1965-05-08,M,M,samuel51@adventure-works.com,40000.0,1.0,Bachelors,Skilled Manual,Y
+27165,MR.,BRUCE,PATEL,1972-03-15,S,M,bruce3@adventure-works.com,20000.0,0.0,Partial High School,Manual,N
+27599,MR.,CORY,SUBRAM,1966-02-01,M,M,cory11@adventure-works.com,90000.0,2.0,Bachelors,Professional,N
+27946,MS.,KATIE,HOLT,1954-05-03,M,F,katie14@adventure-works.com,170000.0,0.0,High School,Professional,N
+29136,,CAROLINE,BRYANT,1964-05-08,M,,caroline19@adventure-works.com,60000.0,4.0,Bachelors,Skilled Manual,Y
+29174,MR.,RICHARD,PARKER,1958-11-15,S,M,richard36@adventure-works.com,80000.0,5.0,Graduate Degree,Professional,N

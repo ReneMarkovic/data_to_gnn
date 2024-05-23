@@ -6,6 +6,7 @@ import chardet
 def convert_df_to_csv(df):
     # Convert DataFrame to CSV string
     return df.to_csv(index=False).encode('utf-8')
+
 # Read data
 def read_data(uploaded_file):
     if uploaded_file.name.lower().endswith('.csv'):
@@ -19,17 +20,6 @@ def read_data(uploaded_file):
         return pd.read_excel(uploaded_file)
     elif uploaded_file.name.lower().endswith('.json'):
         return pd.read_json(uploaded_file)
-
-# Generate data
-def generate_node_data(num_nodes, num_features):
-    data = {
-        "ID": range(1, num_nodes + 1),
-        "Name": [f"Person{i}" for i in range(1, num_nodes + 1)]
-    }
-    for i in range(num_features-1):
-        data[f"Feature_{i+1}"] = np.random.rand(num_nodes)
-    data[f"Feature_{num_features}"]=np.random.choice(["A","B","C"],num_nodes)
-    return pd.DataFrame(data)
 
 def describe_node_data(node_data:pd.DataFrame):
     Number_of_nan = node_data.isnull().sum().sum()

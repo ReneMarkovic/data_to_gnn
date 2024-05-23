@@ -97,7 +97,6 @@ class Generate_Dataset(Dataset):
         plt.tight_layout()
         plt.savefig("graph.png")
         
-
     def process(self):
         #print("Processing data...")
         #print("Node roles:", self.node_roles)
