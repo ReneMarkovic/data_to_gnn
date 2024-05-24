@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import chardet
-
+import os
 def convert_df_to_csv(df):
     # Convert DataFrame to CSV string
     return df.to_csv(index=False).encode('utf-8')
@@ -39,10 +39,14 @@ def describe_node_data(node_data:pd.DataFrame):
     st.dataframe(node_data.head(5))
 
 def generate_edge_data(node_data, f_edges:float = 0.1):
+    print("\n\n")
+    print("Node data:\n",node_data)
+    print("\n\n")
     # Check if there are enough nodes to create the requested number of edges
     num_nodes = len(node_data)
     n_edges = int(f_edges*(num_nodes-1))
     # Generate random pairs of nodes
+    #cls clear terminal
     
     edges = []
     for i in range(num_nodes):
@@ -52,13 +56,13 @@ def generate_edge_data(node_data, f_edges:float = 0.1):
                 edges.append([node_i, j])
             else:
                 pass
-
     # Optionally, add random weights or other features to the edges
     weights = np.random.uniform(1, 10, size=(len(edges), 1))  # Random weights between 1 and 10
 
     # Create a DataFrame
-    edge_data = pd.DataFrame(edges, columns=['Source', 'Target'])
+    edge_data = pd.DataFrame(edges, columns=['ID', 'Target'])
     edge_data['Weight'] = np.round(weights, 2)
+    #describe_edge_data(edge_data)
     return edge_data
 
 def describe_edge_data(edge_data:pd.DataFrame):
