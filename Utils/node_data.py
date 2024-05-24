@@ -56,19 +56,19 @@ def process_uploaded_files(uploaded_files):
 
 def node_data():
     node_data_choice = st.radio("Choose how to provide NODE data:", ('Upload NODE Data', 'Generate NODE Data'))
-
+    st.session_state['step 1 extended'] = False
     if node_data_choice == 'Generate NODE Data':
-        st.write("Generate Node Table")
-        with st.form("node_data_form"):
-            submit_button, num_nodes, num_features, edge_density = generate_dummy_node_data()
-            if submit_button:
-                node_data = generate_node_data(num_nodes, num_features)
-                edge_data = generate_edge_data(node_data, f_edges=edge_density/100.0)
-                data_source = [node_data, edge_data]
+        with st.expander("Generate NODE Data",expanded = st.session_state['step 1 extended']):
+            with st.form("node_data_form"):
+                submit_button, num_nodes, num_features, edge_density = generate_dummy_node_data()
+                if submit_button:
+                    node_data = generate_node_data(num_nodes, num_features)
+                    edge_data = generate_edge_data(node_data, f_edges=edge_density/100.0)
+                    data_source = [node_data, edge_data]
 
-                st.session_state['data_source'] = data_source
-                st.session_state['node_data_generated'] = True
-                st.session_state['node_choice'] = True
+                    st.session_state['data_source'] = data_source
+                    st.session_state['node_data_generated'] = True
+                    st.session_state['node_choice'] = True
 
     if st.session_state.get('node_data_generated', False):
         data_source = st.session_state['data_source']
@@ -93,13 +93,14 @@ def node_data():
             st.session_state['expander_state_step1'] = False
 
     elif node_data_choice == 'Upload NODE Data':
-        uploaded_files = st.file_uploader("Upload Node Tables", type=['csv', 'xlsx', 'json'], accept_multiple_files=True)
-        if uploaded_files:
-            node_data_list = process_uploaded_files(uploaded_files)
-            if node_data_list and st.button('Continue to Step 2: Define table relations'):
-                st.session_state['node_data_list'] = node_data_list
-                st.session_state['node_data'] = {item['name']: item for item in node_data_list}
-                st.success('Node data has been successfully set!')
-                st.session_state['expander_state_step1'] = False
-                st.session_state['node_choice'] = True
+        with st.expander("Upload NODE Data",expanded = st.session_state['step 1 extended']):
+            uploaded_files = st.file_uploader("Upload Node Tables", type=['csv', 'xlsx', 'json'], accept_multiple_files=True)
+            if uploaded_files:
+                node_data_list = process_uploaded_files(uploaded_files)
+                if node_data_list and st.button('Continue to Step 2: Define table relations'):
+                    st.session_state['node_data_list'] = node_data_list
+                    st.session_state['node_data'] = {item['name']: item for item in node_data_list}
+                    st.success('Node data has been successfully set!')
+                    st.session_state['expander_state_step1'] = False
+                    st.session_state['node_choice'] = True
     return st.session_state.get('node_choice', False)
